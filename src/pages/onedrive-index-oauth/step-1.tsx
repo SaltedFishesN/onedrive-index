@@ -7,7 +7,6 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import siteConfig from '../../../config/site.config'
 import apiConfig from '../../../config/api.config'
 import Navbar from '../../components/Navbar'
-import Footer from '../../components/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { getAccessToken } from '../api'
 
@@ -166,8 +165,6 @@ export default function OAuthStep1({ clientId, clientSecret }) {
           </div>
         </div>
       </main>
-
-      <Footer />
     </div>
   )
 }

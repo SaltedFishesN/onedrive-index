@@ -8,7 +8,6 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 import siteConfig from '../../../config/site.config'
 import Navbar from '../../components/Navbar'
-import Footer from '../../components/Footer'
 
 import { getAuthPersonInfo, requestTokenWithAuthCode, sendTokenToServer } from '../../utils/oAuthHandler'
 import { LoadingIcon } from '../../components/Loading'
@@ -279,8 +278,6 @@ export default function OAuthStep3({ userPrincipalName, accessToken, expiryTime,
           </div>
         </div>
       </main>
-
-      <Footer />
     </div>
   )
 }

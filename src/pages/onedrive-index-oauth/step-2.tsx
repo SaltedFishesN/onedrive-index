@@ -8,7 +8,6 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 import siteConfig from '../../../config/site.config'
 import Navbar from '../../components/Navbar'
-import Footer from '../../components/Footer'
 import { LoadingIcon } from '../../components/Loading'
 import { extractAuthCodeFromRedirected, generateAuthorisationUrl } from '../../utils/oAuthHandler'
 import { getAccessToken } from '../api'
@@ -164,8 +163,6 @@ export default function OAuthStep2() {
           </div>
         </div>
       </main>
-
-      <Footer />
     </div>
   )
 }
