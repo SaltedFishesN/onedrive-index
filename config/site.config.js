@@ -30,8 +30,13 @@ module.exports = {
   
   // [OPTIONAL] This is an array of names and links for setting your social information and links.
   // In the latest update, all brand icons inside font awesome is supported and the icon to render is based on the name you provide. See the documentation for details.
-  links: [],
-
+  links: [
+    {
+      name: 'GitHub',
+      link: 'https://github.com/iRedScarf/onedrive-index',
+    },
+  ],
+  
   // [OPTIONAL] This represents the maximum number of items that one directory lists, pagination supported.
   // Do note that this is limited up to 200 items by the upstream OneDrive API.
   maxItems: 200,

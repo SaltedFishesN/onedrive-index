@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 import siteConfig from '../../config/site.config'
 import Navbar from '../components/Navbar'
@@ -30,12 +29,4 @@ export default function Folders() {
       </main>
     </div>
   )
-}
-
-export async function getServerSideProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ['common'])),
-    },
-  }
 }
